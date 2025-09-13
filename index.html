@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Amor para Yiyi</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #ffe6f0;
+      color: #d63384;
+      text-align: center;
+      padding: 50px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1em;
+      background-color: #d63384;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #a61d5d;
+    }
+
+    #mensaje {
+      margin-top: 20px;
+      font-size: 1.5em;
+      color: #ff1a75;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hola, Yiyi 💖</h1>
+  <p>Esta página es un pequeño mensaje de amor para ti.</p>
+
+  <button onclick="mostrarMensaje()">Hazme sonreír</button>
+  <p id="mensaje"></p>
+
+  <script>
+    function mostrarMensaje() {
+      const mensajes = [
+        "Yiyi, eres increíble 😍",
+        "Siempre pienso en ti 💕",
+        "Tu sonrisa ilumina mi día 🌸",
+        "Te quiero mucho, Yiyi ❤️"
+      ];
+      const indice = Math.floor(Math.random() * mensajes.length);
+      document.getElementById('mensaje').textContent = mensajes[indice];
+    }
+  </script>
+
+</body>
+</html>
